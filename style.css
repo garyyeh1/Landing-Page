@@ -2,15 +2,14 @@ body {
     margin: 0;
 }
 
-
 .structure{
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
 
-    
+/*HEADER*/
+
 .header,
 .footer {
     display: flex;
@@ -33,6 +32,7 @@ ul{
     font-size: 20px;
 }
 
+/*CONTENT*/
 
 .main{
     display: flex;
@@ -75,18 +75,40 @@ img {
     width: 300px;
 }
 
+/*RANDOM INFORMATION*/
 
-.images{
-    border-radius: 5px;
-    border: 5px, solid, blue;
+.square{
+    border-radius: 20px;
+    border: 2px solid blue;
     height:150px;
     width: 150px;
 }
 
+.pictures{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+h2 {
+    text-align: center;
+    flex:1;
+}
+
+.images {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*CONTENT GROW STRUCTURE*/
 
 .quotes, .webinfo, .pictures {
     flex:1;
 }
+
+/*QUOTES*/
 
 .quotewrap{
     background-color: #e5e7eb;
@@ -103,8 +125,25 @@ img {
     text-align:right;
 }
 
+/*CALL TO ACTION*/
 
+.modal {
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    padding: 3em;
+    margin: 10px 700px;
+    flex-wrap: wrap;
+}
+.button2 {
+    border-color: white;
+}
 
+/*FOOTER*/
 .footer {
     justify-content: center;
     align-items:center;
